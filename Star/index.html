@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <title>Cricket Hype</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.5.0/shaka-player.ui.min.js" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.5.0/controls.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body bgcolor='black' margin:0'>
+
+    <center>
+            <div data-shaka-player-container style='width: 100%; height: 100%'>
+            <video poster="logo.jpg" autoplay data-shaka-player id='video' style='width:100%;height:100%;'></video>
+        </div>
+    </center>
+    <script>
+        const manifestUri = "https://bpprod5linear.akamaized.net/bpk-tv/irdeto_com_Channel_385/output/manifest.mpd";
+        async function init() {
+            const video = document.getElementById('video');
+            const ui = video['ui'];
+            const controls = ui.getControls();
+            const player = controls.getPlayer();
+            window.player = player;
+            window.ui = ui;
+            player.configure({
+                drm: {
+                    "clearKeys": {
+                    /*Key ID*/
+    '1bc728f9dc845aabba707af7be0658eb': 
+                      /*Key*/
+      'ea2f451bf3384d87d6f4b3ad563e36ca'
+                    }
+                }
+            });
+            player.addEventListener('error', onPlayerErrorEvent);
+            controls.addEventListener('error', onUIErrorEvent);
+            try {
+                await player.load(manifestUri);
+                console.log('The video has now been loaded!');
+            } catch (error) {
+                onPlayerError(error);
+        }}
+
+        function onPlayerErrorEvent(errorEvent) {
+            onPlayerError(event.detail);
+        }
+
+        function onPlayerError(error) {
+            console.error('Error code', error.code, 'object', error);
+        }
+
+        function onUIErrorEvent(errorEvent) {
+            onPlayerError(event.detail);
+        }
+
+        function initFailed(errorEvent) {
+            console.error('Unable to load the UI library!');
+        }
+        document.addEventListener('shaka-ui-loaded', init);
+        document.addEventListener('shaka-ui-load-failed', initFailed);
+
+   alert("Join Our Telegram Channel @CricketHype"); 
+
+      function welcome(){
+ window.open("https://telegram.me/CricketHype")
+      }
+    </script>
+</body>
+  <br>
+  <br>
+<script type="text/javascript">(function() {var script=document.createElement("script");script.type="text/javascript";script.async =true;script.src="//telegram.im/widget-button/index.php?id=@CricketHype";document.getElementsByTagName("head")[0].appendChild(script);})();</script>
+<a href="https://telegram.me/+89_DpZx6uUs2Mjk9" target="_blank" class="telegramim_button telegramim_shadow" style="font-size:26px;width:100%;background:#27A5E7;box-shadow:1px 1px 5px #27A5E7;color:#FFFFFF;border-radius:50px;" title=""><i></i> Click here to join telegram</a>
+  <br>
+  <br>
+<style type="text/css" scoped>
+.GeneratedText {
+font-family:'Trebuchet MS', sans-serif;font-weight:bold;line-height:1.3em;color:#FFFFFF;background-color:#000000;
+}
+</style>
+
+<div class="GeneratedText">If Link Don't Works Join Our Telegram Channel And Get New Link.
+  <br>
+  <br>
+Wait 10-20 Seconds, Steaming Will Live. </div>
+</html>
