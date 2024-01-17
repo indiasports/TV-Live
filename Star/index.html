@@ -4,21 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="no-referrer">
-    <title>Cricket Hype</title>
+    <title>CRICKET LIVE STREAMING</title>
+<style>
+  html {
+    height: 100%;
+    width: 100%;
+  }
+  body{
+  background-color:white;
+  }
+  .item{
+  text-decoration:none;
+    margin:0px 0px;
+    padding:0px 0px
+    color: white;
+
+    }
+  ul{
+  list-style:none;
+    margin:0px 0px;
+    padding:0px 0px;
+  }
+  #tele{
+  border:2px solid yellow;
+    color: white;
+
+    background-color:black;
+    display:flex;
+    margin:12px 50px;
+  padding:0px 20px;
+    height:60px;
+    align-items: center;
+  justify-content: center;
+  border-radius: 63px;
+  }
+  #ok{
+  display: flex;
+  align-items: center;
+    justify-content: center;
+
+
+
+    }
+  </style>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.5.0/shaka-player.ui.min.js" crossorigin="anonymous"></script>    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.5.0/controls.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" />
 
-</head>
-<body bgcolor='black' margin:0'>
 
+</head>
+<body bgcolor='white' style='margin:0'>
+
+<body>
     <center>
             <div data-shaka-player-container style='width: 100%; height: 100%'>
             <video poster="logo.jpg" autoplay data-shaka-player id='video' style='width:100%;height:100%;'></video>
         </div>
     </center>
     <script>
-        const manifestUri = "https://bpprod5linear.akamaized.net/bpk-tv/irdeto_com_Channel_385/output/manifest.mpd";
+        const manifestUri = "https://bpprod5linear.akamaized.net/bpk-tv/irdeto_com_Channel_250/output/manifest.mpd";
         async function init() {
             const video = document.getElementById('video');
             const ui = video['ui'];
@@ -30,9 +75,9 @@
                 drm: {
                     "clearKeys": {
                     /*Key ID*/
-    '1bc728f9dc845aabba707af7be0658eb': 
+    '06341bf3dd635e6ca5c71188d0210373': 
                       /*Key*/
-      'ea2f451bf3384d87d6f4b3ad563e36ca'
+      '74f20cd516dd395513c4c75285d4265b'
                     }
                 }
             });
@@ -63,27 +108,36 @@
         document.addEventListener('shaka-ui-loaded', init);
         document.addEventListener('shaka-ui-load-failed', initFailed);
 
-   alert("Join Our Telegram Channel @CricketHype"); 
+   
+var a = confirm("JOIN OUR TELEGRAM CHANNEL");
+
+if(a==true){
+  window.location.href = "https://t.me/CRICKETMATCHSTREAM";
+}
+
+      
+      
+
 
       function welcome(){
- window.open("https://telegram.me/CricketHype")
+ window.open("https://t.me/+0bdOq7ErBvkzODc1")
       }
     </script>
-</body>
-  <br>
-  <br>
-<script type="text/javascript">(function() {var script=document.createElement("script");script.type="text/javascript";script.async =true;script.src="//telegram.im/widget-button/index.php?id=@CricketHype";document.getElementsByTagName("head")[0].appendChild(script);})();</script>
-<a href="https://telegram.me/+89_DpZx6uUs2Mjk9" target="_blank" class="telegramim_button telegramim_shadow" style="font-size:26px;width:100%;background:#27A5E7;box-shadow:1px 1px 5px #27A5E7;color:#FFFFFF;border-radius:50px;" title=""><i></i> Click here to join telegram</a>
-  <br>
-  <br>
-<style type="text/css" scoped>
-.GeneratedText {
-font-family:'Trebuchet MS', sans-serif;font-weight:bold;line-height:1.3em;color:#FFFFFF;background-color:#000000;
-}
-</style>
 
-<div class="GeneratedText">If Link Don't Works Join Our Telegram Channel And Get New Link.
-  <br>
-  <br>
-Wait 10-20 Seconds, Steaming Will Live. </div>
+<!-- <div id="tele">
+  <img src="telegram.svg" />
+  <ul>
+      <li><a class="item" href="https://t.me/+0bdOq7ErBvkzODc1">JOIN TELEGRAM</a></li>
+   </ul>
+  </div> -->
+  <div id="ok">
+  <button  id="tele"onclick="welcome()">
+    <img src="telegram.svg" />
+    CLICK HERE TO JOIN TELEGRAM FOR MORE UPDATES & LIVE LINKS
+    </button>
+
+</div>
+
+
+    </body>
 </html>
